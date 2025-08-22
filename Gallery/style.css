@@ -1,0 +1,35 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+     align-items: center;
+    justify-items: center;
+    
+    padding: 50px 8%;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(28, 188, 73, 0.1);
+}
+.gallery {
+    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 250px; /* Or fix a height like 250px if needed */
+    object-fit: cover; /* optional */
+  }
